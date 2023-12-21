@@ -3925,7 +3925,7 @@ mod tests {
     /// panicking. This is the behavior of most built-in arithmetic operations.
     ///
     /// If `release_result` is `None`, it indicates that the faillible operation
-    /// should panick even in release mode, as e.g. ilog() does.
+    /// should panick even in release mode, as e.g. `ilog()` does.
     fn test_faillible<Rhs: Copy + RefUnwindSafe, const LEN: usize>(
         int: PositiveInt,
         rhs: Rhs,
